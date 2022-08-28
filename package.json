@@ -2,5 +2,24 @@
   "dependencies": {
     "nodemon": "^2.0.19",
     "yarn": "^1.22.19"
-  }
+  },
+  "name": "polymnia-web",
+  "description": "Thanks for downloading this template!",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrAnacletus/Polymnia-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrAnacletus/Polymnia-web/issues"
+  },
+  "homepage": "https://github.com/MrAnacletus/Polymnia-web#readme"
 }
