@@ -48,7 +48,7 @@
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
-  --bs-dark-rgb: 79, 93, 117;
+  --bs-dark-rgb: 57, 92, 107;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
@@ -7784,6 +7784,12 @@ textarea.form-control-lg {
 .text-white-50 {
   --bs-text-opacity: 1;
   color: rgba(255, 255, 255, 0.5) !important;
+}
+.text-naranja {
+  color: #FFCE5F;
+}
+.text-naranja-dark {
+  color: #FFB254;
 }
 
 .text-reset {
