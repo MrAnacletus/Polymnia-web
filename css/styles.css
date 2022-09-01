@@ -18,7 +18,7 @@
   --bs-red: #dc3545;
   --bs-orange: #FFB254;
   --bs-yellow: #FFCE5F;
-  --bs-yellow-dark: #7B642E;
+  --bs-yellow-dark: #cfa541;
   --bs-green: #198754;
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
@@ -236,11 +236,11 @@ sup {
 }
 
 a {
-  color: var(--bs-blue);
+  color: var(--bs-orange);
   text-decoration: underline;
 }
 a:hover {
-  color: #0a58ca;
+  color: var(--bs-yellow-dark);
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -3037,8 +3037,8 @@ textarea.form-control-lg {
   border-color: var(--bs-orange);
 }
 .btn-primary:hover {
-  color: black;
-  background-color: var(--bs-yellow);
+  color: #fff;
+  background-color: var(--bs-yellow-dark);
   border-color: var(--bs-yellow-dark);
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
