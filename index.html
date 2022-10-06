@@ -14,8 +14,12 @@
         <link href="css/styles.css" rel="stylesheet" />
         <style>
             #grad1 {
-                background-color: #395c6b; /* For browsers that do not support gradients */
-                background-image: linear-gradient(to right, #6091a9, #243842 );
+                background-color: #bd4c87; /* For browsers that do not support gradients */
+                background-image: linear-gradient(to right, #bd4c87, #a77747 );
+            }
+            #grad2 {
+                background-color: #bd4c86c3;
+                background-image: linear-gradient(to right, #bd4c86c3, #a77747cb );
             }
         </style>
     </head>
@@ -24,7 +28,7 @@
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v14.0" nonce="rKniG2cv"></script>
         <main class="flex-shrink-0">
             <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="grad1">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="grad2">
                 <div class="container px-5" >
                     <a class="navbar-brand" href="index.html"><img src="./assets/finalv1.svg" alt="..." width="150" height="100" /></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -40,25 +44,25 @@
             </nav>
             <!-- Header-->
             <header class="bg-dark py-5" id="grad1">
-                <div class="container px-5" >
+                <div class="container pt-5" >
                     <div class="row gx-5 align-items-center justify-content-center">
                         <div class="col-lg-8 col-xl-7 col-xxl-6">
                             <div class="my-5 text-center text-xl-start">
                                 <h1 class="display-5 fw-bolder text-white mb-2">Partitas</h1>
-                                <p class="lead fw-normal text-white-50 mb-4">
+                                <p class="lead fw-normal text-white  mb-4">
                                     Partitas es una plataforma que permitirá a entusiastas de la música generar partituras
                                     o tablaturas de sus canciones favoritas a partir de un archivo de audio, además de
                                     otorgar la opción de simplificar las partituras generadas para aquellas personas con
                                     menor experiencia en el ámbito musical, logrando así, acercar la música a una mayor
                                     cantidad de público.
                                 </p>
-                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start" style="color: orange;">
-                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" style="color: black" href="#features">Leer más</a>
+                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start ">
+                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" style="color: rgb(255, 255, 255)" href="#features">Leer más</a>
                                     <!-- <a class="btn btn-outline-light btn-lg px-4" href="#!">¡¡Pruebalo Ahora!!</a> -->
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
+                        <div class="col-lg-4 col-xl-5 col-xxl-6 my-5 d-none d-xl-block text-center">
                             <!-- <img class="img-fluid rounded-3 my-5" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /> -->
                             <iframe width="500" height="315" src="https://www.youtube.com/embed/0h9SNwh5dgY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
@@ -67,28 +71,28 @@
             </header>
             <!-- Features section-->
             <section class="py-5" id="features">
-                <div class="container px-5 my-5">
+                <div class="container px-5 pt-5 my-5">
                     <div class="row gx-5">
                         <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">¿Por qué Partitas?</h2></div>
                         <div class="col-lg-8">
                             <div class="row gx-5 row-cols-1 row-cols-md-2">
                                 <div class="col mb-5 h-100">
-                                    <div class="feature bg-primary bg-gradient text-black rounded-3 mb-3 border border-dark" style="color: orange;"><i class="bi bi-laptop" ></i></div>
+                                    <div class="feature bg-primary bg-gradient text-black rounded-3 mb-3 border border-dark"><i class="bi bi-laptop" style="color: #fff" ></i></div>
                                     <h2 class="h4">Fácil de acceder</h2>
                                     <p class="mb-0 h5">Servicio accesible desde cualquier navegador y sin la necesidad de instalar software.</p>
                                 </div>
                                 <div class="col mb-5 h-100">
-                                    <div class="feature bg-primary bg-gradient text-black rounded-3 mb-3 border border-dark" style="color: orange;"><i class="bi bi-file-earmark-music-fill"></i></div>
+                                    <div class="feature bg-primary bg-gradient text-black rounded-3 mb-3 border border-dark" ><i class="bi bi-file-earmark-music-fill" style="color: #fff"></i></div>
                                     <h2 class="h4">Práctico</h2>
                                     <p class="mb-0 h5">Tan solo necesitas subir el audio de la canción que gustes a la plataforma.</p>
                                 </div>
                                 <div class="col mb-5 mb-md-0 h-100">
-                                    <div class="feature bg-primary bg-gradient text-black rounded-3 mb-3 border border-dark" style="color: orange;"><i class="bi bi-list"></i></div>
-                                    <h2 class="h4">Sencillo de ocupar</h2>
+                                    <div class="feature bg-primary bg-gradient text-black rounded-3 mb-3 border border-dark" ><i class="bi bi-list" style="color: #fff"></i></div>
+                                    <h2 class="h4">Sencillo de usar</h2>
                                     <p class="mb-0 h5">Interfaz pensada en el usuario, sin menús engorrosos.</p>
                                 </div>
                                 <div class="col h-100">
-                                    <div class="feature bg-primary bg-gradient text-black rounded-3 mb-3 border border-dark" style="color: orange;"><i class="bi bi-music-note-list"></i></div>
+                                    <div class="feature bg-primary bg-gradient text-black rounded-3 mb-3 border border-dark" ><i class="bi bi-music-note-list" style="color: #fff"></i></div>
                                     <h2 class="h4">Abanico de instrumentos</h2>
                                     <p class="mb-0 h5">Partitas trabaja con una buena variedad de instrumentos de los cuales generar partituras o tablaturas.</p>
                                 </div>
@@ -154,23 +158,23 @@
                     <div class="col-auto">
                         <div class="row">
                             <div class="col-auto">
-                                <img src="./assets/LogoPolymnia.png" width="100" height="100">
+                                <img src="./assets/LogoPolymnia.png" class="rounded-circle" width="100" height="100">
                             </div>
                         </div>
                         <div class="small m-0 text-white">Copyright &copy; Partitas 2022 - Feria de Software USM</div>
                     </div>
                     <div class="col-auto">
-                        <a class="link" href="https://www.feriadesoftware.cl/"><img src="./assets/logo-fesw-300x161.png" width="200" height="110"></a>
+                        <a class="link" href="https://www.feriadesoftware.cl/"><img src="./assets/fesw-logo-w.png" width="200" height="110"></a>
                         <div class="row">
-                            <a class="link" href="https://www.feriadesoftware.cl/" style="color: orange;">https://www.feriadesoftware.cl/</a>
+                            <a class="link" href="https://www.feriadesoftware.cl/" style="color: rgb(255, 255, 255);">https://www.feriadesoftware.cl/</a>
                         </div>
                     </div>
                     <div class="col-auto">
                         <p style="color: white;">Síguenos</p>
-                        <a class="fs-3 px-2 link" href="https://www.facebook.com/Polymnia-103142859200736"><i class="bi bi-facebook" style="color: orange;" ></i></a>
-                        <a class="fs-3 px-2 link" href="https://www.instagram.com/polymnia.contacto/"><i class="bi bi-instagram" style="color: orange;" ></i></a>
-                        <a class="fs-3 px-2 link" href="https://www.linkedin.com/in/polymnia-contacto-b2550924a/"><i class="bi bi-linkedin" style="color: orange;"></i></a>
-                        <a class="fs-3 px-2 link" href="https://www.youtube.com/channel/UChzWYYawHWMG3Q11WhYcAqA"><i class="bi bi-youtube" style="color: orange;"></i></a>
+                        <a class="fs-3 px-2 link" href="https://www.facebook.com/Polymnia-103142859200736"><i class="bi bi-facebook" style="color: rgb(255, 255, 255);" ></i></a>
+                        <a class="fs-3 px-2 link" href="https://www.instagram.com/polymnia_fsw/"><i class="bi bi-instagram" style="color: rgb(255, 255, 255);" ></i></a>
+                        <a class="fs-3 px-2 link" href="https://www.linkedin.com/in/polymnia-contacto-b2550924a/"><i class="bi bi-linkedin" style="color: rgb(255, 255, 255);"></i></a>
+                        <a class="fs-3 px-2 link" href="https://www.youtube.com/channel/UChzWYYawHWMG3Q11WhYcAqA"><i class="bi bi-youtube" style="color: rgb(255, 255, 255);"></i></a>
                     </div>
                     <div class="col-auto">
                         <!-- <span class="text-white mx-1">&middot;</span> -->

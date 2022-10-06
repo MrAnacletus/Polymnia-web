@@ -14,16 +14,20 @@
         <link href="css/styles.css" rel="stylesheet" />
         <style>
             #grad1 {
-                background-color: #395c6b; /* For browsers that do not support gradients */
-                background-image: linear-gradient(to right, #6091a9, #243842 );
+                background-color: #bd4c87; /* For browsers that do not support gradients */
+                background-image: linear-gradient(to right, #bd4c87, #a77747 );
+            }
+            #grad2 {
+                background-color: #bd4c86c3;
+                background-image: linear-gradient(to right, #bd4c86c3, #a77747cb );
             }
         </style>
     </head>
     <body class="d-flex flex-column" >
         <main class="flex-shrink-0">
             <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="grad1">
-                <div class="container px-5">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="grad2">
+                <div class="container px-5" >
                     <a class="navbar-brand" href="index.html"><img src="./assets/finalv1.svg" alt="..." width="150" height="100" /></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -39,13 +43,13 @@
             <!-- Header-->
             <header class="py-5 bg-dark" id="grad1">
                 <div class="container px-5">
-                    <div class="row gx-5 align-items-center">
+                    <div class="row gx-5 pt-3 align-items-center">
                         <div class="col-lg-6">
                             <div class="text-start my-5">
                                 <h1 class="fw-bolder text-white mb-3">
                                     Sobre nosotros                         
                                 </h1>
-                                <p class="lead fw-normal text-white-50 mb-4">
+                                <p class="lead fw-normal text-white mb-4">
                                     Polymnia es una pre-empresa conformada por estudiantes de ingeniería civil informática de la Universidad Técnica 
                                     Federico Santa María para la Feria de Software en su versión número 30 desarrollada en la misma casa de estudios.<br>
                                     <br>
@@ -56,7 +60,16 @@
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <img class="img-fluid rounded mb-5 mb-lg-0" src="./assets/LogoPolymnia.png" alt="..." /></div>
+                            <img class="img-fluid rounded-circle mb-5 my-5 mb-lg-0" src="./assets/LogoPolymnia.png" alt="..." /></div>
+                        </div>
+                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start ">
+                            <a class="btn btn-primary btn-lg px-4 me-sm-3" style="color: rgb(255, 255, 255)" href="#mision">Misión</a>
+                            
+                            <a class="btn btn-primary btn-lg px-4 me-sm-3" style="color: rgb(255, 255, 255)" href="#vision">Visión</a>
+                            
+                            <a class="btn btn-primary btn-lg px-4 me-sm-3" style="color: rgb(255, 255, 255)" href="#valor">Valor</a>
+                        
+                            <a class="btn btn-primary btn-lg px-4 me-sm-3" style="color: rgb(255, 255, 255)" href="#equipo">Equipo</a>
                         </div>
                     </div>
                 </div>
@@ -67,7 +80,7 @@
                     <div class="row gx-5 align-items-center">
                         <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="./assets/misionmusica.jpg" alt="..." /></div>
                         <div class="col-lg-6">
-                            <h2 class="fw-bolder">Misión</h2>
+                            <h2 class="fw-bolder" id="mision">Misión</h2>
                             <p class="lead fw-normal text-muted mb-0">
                                 Como Polymnia buscamos aumentar el alcance de la música en la sociedad.
                             </p>
@@ -81,7 +94,7 @@
                     <div class="row gx-5 align-items-center">
                         <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0" src="./assets/visionmusica.jpg" alt="..." /></div>
                         <div class="col-lg-6">
-                            <h2 class="fw-bolder">Visión</h2>
+                            <h2 class="fw-bolder" id="vision">Visión</h2>
                             <p class="lead fw-normal text-muted mb-0">
                                 Seremos una empresa referente en el desarrollo de productos que apoyen la investigación y el desarrollo autodidacta 
                                 en actividades orientadas al aprendizaje musical a través de la generación de material 
@@ -97,9 +110,9 @@
                     <div class="row gx-5 align-items-center">
                         <div class="col-lg-6 "><img class="img-fluid rounded mb-5 mb-lg-0" src="./assets/valormusica.jpg" alt="..." /></div>
                         <div class="col-lg-6">
-                            <h2 class="fw-bolder">Valor</h2>
+                            <h2 class="fw-bolder" id="valor">Valor</h2>
                             <p class="lead fw-normal text-muted mb-0">
-                                Dentro de nuestros valores estan:
+                                Dentro de nuestros valores están:
                                 <ul>
                                     <li class="lead fw-normal text-muted mb-0">Pasión por la música y las soluciones que proveemos.</li>
                                     <li class="lead fw-normal text-muted mb-0">Calidad en nuestros productos y los resultados que obtenemos.</li>
@@ -114,7 +127,7 @@
             <section class="py-5 bg-light">
                 <div class="container px-5 my-5">
                     <div class="text-center">
-                        <h2 class="fw-bolder">Nuestro Equipo</h2>
+                        <h2 class="fw-bolder" id="equipo">Nuestro Equipo</h2>
                         <p class="lead fw-normal text-muted mb-5">Dedicados a la calidad</p>
                     </div>
                     <div class="row gx-1 row-cols-4 row-cols-sm-2 row-cols-xl-3 justify-content-center">
@@ -124,7 +137,7 @@
                                     <img class="img-fluid rounded-circle mb-4 px-4" src="./assets/nati.jpg" alt="..." style="max-width: 150rem; max-height: 150px;"/>
                                 </a>
                                 <h5 class="fw-bolder">Natalia Sánchez</h5>
-                                <div class="fst-italic text-muted">Scrum Master y Lider</div>
+                                <div class="fst-italic text-muted">Scrum Master y Desarrollador Back-end</div>
                             </div>
                         </div>
                         <div class="col-auto mb-5 mb-5 mb-xl-0">
@@ -169,7 +182,7 @@
                                     <img class="img-fluid rounded-circle mb-4 px-4" src="./assets/sebaC.jpg" alt="..." style="max-width: 150rem; max-height: 150px;"/>
                                 </a>
                                 <h5 class="fw-bolder">Sebastián Calderón</h5>
-                                <div class="fst-italic text-muted">QA, Desarrollador Front-end(asistente) y Marketing</div>
+                                <div class="fst-italic text-muted">QA, Desarrollador Front-end y Marketing</div>
                             </div>
                         </div>
                     </div>
@@ -183,23 +196,23 @@
                     <div class="col-auto">
                         <div class="row">
                             <div class="col-auto">
-                                <img src="./assets/LogoPolymnia.png" width="100" height="100">
+                                <img src="./assets/LogoPolymnia.png" class="rounded-circle" width="100" height="100">
                             </div>
                         </div>
                         <div class="small m-0 text-white">Copyright &copy; Partitas 2022 - Feria de Software USM</div>
                     </div>
                     <div class="col-auto">
-                        <a class="link" href="https://www.feriadesoftware.cl/"><img src="./assets/logo-fesw-300x161.png" width="200" height="110"></a>
+                        <a class="link" href="https://www.feriadesoftware.cl/"><img src="./assets/fesw-logo-w.png" width="200" height="110"></a>
                         <div class="row">
-                            <a class="link" href="https://www.feriadesoftware.cl/" style="color: orange;">https://www.feriadesoftware.cl/</a>
+                            <a class="link" href="https://www.feriadesoftware.cl/" style="color: rgb(255, 255, 255);">https://www.feriadesoftware.cl/</a>
                         </div>
                     </div>
                     <div class="col-auto">
                         <p style="color: white;">Síguenos</p>
-                        <a class="fs-3 px-2 link" href="https://www.facebook.com/Polymnia-103142859200736"><i class="bi bi-facebook" style="color: orange;" ></i></a>
-                        <a class="fs-3 px-2 link" href="https://www.instagram.com/polymnia.contacto/"><i class="bi bi-instagram" style="color: orange;" ></i></a>
-                        <a class="fs-3 px-2 link" href="https://www.linkedin.com/in/polymnia-contacto-b2550924a/"><i class="bi bi-linkedin" style="color: orange;"></i></a>
-                        <a class="fs-3 px-2 link" href="https://www.youtube.com/channel/UChzWYYawHWMG3Q11WhYcAqA"><i class="bi bi-youtube" style="color: orange;"></i></a>
+                        <a class="fs-3 px-2 link" href="https://www.facebook.com/Polymnia-103142859200736"><i class="bi bi-facebook" style="color: rgb(255, 255, 255);" ></i></a>
+                        <a class="fs-3 px-2 link" href="https://www.instagram.com/polymnia_fsw/"><i class="bi bi-instagram" style="color: rgb(255, 255, 255);" ></i></a>
+                        <a class="fs-3 px-2 link" href="https://www.linkedin.com/in/polymnia-contacto-b2550924a/"><i class="bi bi-linkedin" style="color: rgb(255, 255, 255);"></i></a>
+                        <a class="fs-3 px-2 link" href="https://www.youtube.com/channel/UChzWYYawHWMG3Q11WhYcAqA"><i class="bi bi-youtube" style="color: rgb(255, 255, 255);"></i></a>
                     </div>
                     <div class="col-auto">
                         <!-- <span class="text-white mx-1">&middot;</span> -->
